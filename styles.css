@@ -138,9 +138,30 @@ body {
     text-align: left;
 }
 
+
 .option-radio {
-    margin-right: 10px; 
+    appearance: none; 
+    width: 15px; 
+    height: 15px;
+    border: 2px solid #FF6B82; 
+    border-radius: 50%;
+    background-color: white; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
 }
+
+.option-radio:checked::before {
+    content: "";
+    width: 10px; 
+    height: 10px;
+    background-color: #FF6B82; 
+    border-radius: 50%;
+    display: block;
+}
+
 
 .pair-info,
 .price-info {
